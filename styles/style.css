@@ -1,0 +1,24 @@
+/* Desktop */
+header {
+    background: aqua;
+    max-width:1160px; height:100px; margin:0 auto;
+    display: flex; flex-flow:row nowrap; 
+    justify-content:space-between; align-items:center;
+}
+header h1 {
+    background: yellow;
+    width:100px; height:35px;
+}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {
+    background: pink;
+}
+header nav ul {display:flex; flex-flow:row nowrap;}
+header nav ul li {margin-right:20px;}
+header nav ul li:last-child {margin-right:0;}
+header nav ul li a {
+    font-size:1.33rem; letter-spacing:-0.02em;
+}
+/* 모바일 메뉴 - 데스크탑에서 숨기기 */
+header nav .m_nav {display:none;}

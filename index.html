@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포인핸드</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
@@ -12,7 +13,7 @@
     <header>
         <h1><a href="#"><img src="#" alt="포인핸드"></a></h1>
         <nav>
-            <ul>
+            <ul><!-- 태블릿, 데스크탑 메인메뉴 -->
                 <li><a href="#">포인핸드란?</a></li>
                 <li><a href="#">입양문의</a></li>
                 <li><a href="#">보호소오는길</a></li>
@@ -23,6 +24,17 @@
                 <span></span><span></span><span></span>
             </a>
         </nav>
+        <div class="m_nav_open">
+            <button id="close" type="button" title="모바일 메뉴 닫기"><i class="fa-solid fa-xmark"></i></button>
+            <ul><!-- 모바일 메인메뉴 -->
+                <li><a href="#">포인핸드란?</a></li>
+                <li><a href="#">입양문의</a></li>
+                <li><a href="#">보호소오는길</a></li>
+                <li><a href="#">초보집사 도움말</a></li>
+                <li><a href="#">행사/이벤트</a></li>
+            </ul>
+        </div>
     </header>
+    <script src="./script/script.js"></script>
 </body>
 </html>

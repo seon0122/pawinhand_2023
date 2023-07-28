@@ -48,3 +48,74 @@ header .m_nav_open ul li:last-child {
     margin-bottom: 0;
 }
 header .m_nav_open ul li a {font-size:1.33rem;}
+/* main */
+main {}
+/* main-1. swiper-slide */
+/* swiper 플러그인의 정식명칭 클래스는 
+웹 페이지 1장에서 swiper가 2개 이상 들어올 경우 
+디자인이 강제로 중복될 수 있으므로 
+개별 아이디 및 클래스 사용해서 선택자를 만들고 디자인한다. */
+main #pawin_slide {
+    width:1160px; height:650px;
+    background:yellow;
+}
+main #pawin_slide .swiper-wrapper {}
+main #pawin_slide .swiper-wrapper .swiper-slide {}
+main #pawin_slide .swiper-wrapper .slide1 {
+    background:url(https://picsum.photos/id/103/1160);
+}
+main #pawin_slide .swiper-wrapper .slide2 {
+    background:url(https://picsum.photos/id/10/1160);
+}
+main #pawin_slide .swiper-wrapper .slide3 {
+    background:url(https://picsum.photos/id/128/1160);
+}
+main #pawin_slide .swiper-wrapper .slide4 {
+    background:url(https://picsum.photos/id/110/1160);
+}
+main #pawin_slide .swiper-button-prev,
+main #pawin_slide .swiper-button-next {
+    width: 40px; height: 40px;
+}
+main #pawin_slide .swiper-button-prev {
+    background: url(../images/prev.png) no-repeat;
+}
+main #pawin_slide .swiper-button-next {
+    background: url(../images/next.png) no-repeat;
+}
+/* swiper-slide 라이브러리에서 기본 제공하는 이전, 다음버튼 숨기기 */
+main #pawin_slide .swiper-button-prev::after,
+main #pawin_slide .swiper-button-next::after {
+    display:none;
+}
+
+/* 1160*300 slide*3 swiper */
+main #sub_slide {
+    width:1160px; height:300px;
+    background:lightblue;
+}
+main #sub_slide .swiper-wrapper {}
+main #sub_slide .swiper-wrapper .swiper-slide {}
+main #sub_slide .swiper-wrapper .s1 {
+    background:url(https://picsum.photos/id/250/1160);
+}
+main #sub_slide .swiper-wrapper .s2 {
+    background:url(https://picsum.photos/id/260/1160);
+}
+main #sub_slide .swiper-wrapper .s3 {
+    background:url(https://picsum.photos/id/270/1160);
+}
+main #sub_slide .swiper-button-prev,
+main #sub_slide .swiper-button-next {
+    width: 40px; height: 40px;
+}
+main #sub_slide .swiper-button-prev {
+    background: url(../images/sub-prev.png) no-repeat;
+}
+main #sub_slide .swiper-button-next {
+    background: url(../images/sub-next.png) no-repeat;
+}
+main #sub_slide .swiper-button-prev::after,
+main #sub_slide .swiper-button-next::after {
+    display: none;
+}

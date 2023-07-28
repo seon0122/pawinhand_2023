@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포인핸드</title>
+    <!-- 자바스크립트 슬라이드를 쉽게 사용할 수 있는 라이브러리 swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
@@ -35,6 +40,34 @@
             </ul>
         </div>
     </header>
+    <!-- main -->
+    <main>
+        <!-- 1. swiper-slide -->
+        <!-- .swiper 슬라이드의 전체 틀 클래스 (추가 아이디 및 클래스 적용 가능) -->
+        <div class="swiper" id="pawin_slide">
+            <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+            <div class="swiper-wrapper">
+                <!-- swiper-slide 슬라이드 개별 한장 부모 -->
+                <div class="swiper-slide slide1">1</div>
+                <div class="swiper-slide slide2">2</div>
+                <div class="swiper-slide slide3">3</div>
+                <div class="swiper-slide slide4">4</div>
+            </div>
+            <!-- 슬라이드 이전, 다음 버튼 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div><!-- slide end -->
+        <!-- 1160*300 slide*3 swiper 생성 -->
+        <div class="swiper" id="sub_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide s1">s1</div>
+                <div class="swiper-slide s2">s2</div>
+                <div class="swiper-slide s3">s3</div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </main>
     <script src="./script/script.js"></script>
 </body>
 </html>

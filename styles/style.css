@@ -55,14 +55,17 @@ main {}
 웹 페이지 1장에서 swiper가 2개 이상 들어올 경우 
 디자인이 강제로 중복될 수 있으므로 
 개별 아이디 및 클래스 사용해서 선택자를 만들고 디자인한다. */
+/* swiper-slide 반응형 설계를 할 경우 */
+/* swiper-slide 자체가 가변형 기능을 내장하고 있기 때문에
+가장 바깥쪽 swiper 영역틀 기준으로 가변크기를 넣어주면 자동으로 반응형에 맞춰지는 슬라이드가 완성된다. */
 main #pawin_slide {
-    width:1160px; height:650px;
+    max-width:1160px; height:650px;
     background:yellow;
 }
 main #pawin_slide .swiper-wrapper {}
 main #pawin_slide .swiper-wrapper .swiper-slide {}
 main #pawin_slide .swiper-wrapper .slide1 {
-    background:url(https://picsum.photos/id/103/1160);
+    background:url(../images/pawin_slide_desktop.jpg) center;
 }
 main #pawin_slide .swiper-wrapper .slide2 {
     background:url(https://picsum.photos/id/10/1160);
@@ -77,11 +80,15 @@ main #pawin_slide .swiper-button-prev,
 main #pawin_slide .swiper-button-next {
     width: 40px; height: 40px;
 }
+/* swiper-slide prev, next 기본css(position:absolute)내장 */
+/* 위치를 움직이고 싶다면 position속성 추가작성없이 방향값 추가 */
 main #pawin_slide .swiper-button-prev {
     background: url(../images/prev.png) no-repeat;
+    left:20px;
 }
 main #pawin_slide .swiper-button-next {
     background: url(../images/next.png) no-repeat;
+    right:20px;
 }
 /* swiper-slide 라이브러리에서 기본 제공하는 이전, 다음버튼 숨기기 */
 main #pawin_slide .swiper-button-prev::after,

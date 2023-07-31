@@ -33,11 +33,12 @@ close.addEventListener('click', function(){
 // const 변수명 = new Swiper('적용대상',{속성:값, 속성:값});
 const pawin_slide = new Swiper('#pawin_slide',{
     autoplay:{
-        delay:1000, //슬라이드 간격(밀리초) 기본3초
+        delay:10000, //슬라이드 간격(밀리초) 기본3초
         disableOnInteraction:false, //버튼 클릭 후 자동재생유지
     }, //자동재생
     loop:true, //마지막 슬라이드 -> 첫번째 슬라이드 자연스러운 변경
-    effect:'fade', //제자리 변경 슬라이드 효과
+    /* effect:'fade', */ //제자리 변경 슬라이드 효과
+    direction:'horizontal',
     // direction:'vertical' //기본은 'horizontal'
     navigation: { //이전, 다음 내비게이션 연결
         // next, prev 객체 연결 시 부모를 안적으면

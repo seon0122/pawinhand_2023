@@ -5,6 +5,7 @@
 @media screen and (max-width:1160px) {
     /* 1160px 이하일 경우 좌우 15px 여백적용 */
     header {width:calc(100% - 30px);}
+    /* main #pawin_slide {width:calc(100% - 30px);} */
 }/* 1160 end */
 @media screen and (max-width:900px) {
     header nav ul {display:none;}
@@ -26,5 +27,12 @@
     header .m_nav_open {
     background: lime;
     display: block; /*none -> block 다시 변경*/
+    }
+    /* pawin-slide */
+    /* 반응형웹의 슬라이드는 높이 고정 슬라이드의 경우 
+        데스크탑, 모바일용의 이미지를 따로 제작하고
+        @media 모바일조건에서 m 이미지로 변경하는 경로를 작성한다. */
+    main #pawin_slide .swiper-wrapper .slide1 {
+        background:url(../images/pawin_slide_m.jpg) center;
     }
 }/* 900 end */

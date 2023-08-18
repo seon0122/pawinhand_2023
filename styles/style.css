@@ -1,19 +1,19 @@
 /* Desktop */
 header {
-    background: aqua;
+    /* background: aqua; */
     max-width:1160px; height:100px; margin:0 auto;
     display: flex; flex-flow:row nowrap; 
     justify-content:space-between; align-items:center;
     position: relative; /* m-nav-open absolute 부모기준 */
 }
 header h1 {
-    background: yellow;
+    /* background: yellow; */
     width:100px; height:35px;
 }
 header h1 a {}
-header h1 a img {width:100%;}
+header h1 a img {width:100%; height: 100%;}
 header nav {
-    background: pink;
+    /* background: pink; */
 }
 header nav ul {display:flex; flex-flow:row nowrap;}
 header nav ul li {margin-right:20px;}
@@ -25,7 +25,7 @@ header nav ul li a {
 header nav .m_nav {display:none;}
 /* header .m_nav_open {display: none;} */
 header .m_nav_open {
-    background: lime;
+    /* background: lime; */
     display: none; /*block -> none 변경*/
     position: absolute; 
     /* width:calc(100% - 30px); */
@@ -37,7 +37,7 @@ header .m_nav_open #close {
     font-size:24px;
     position: absolute; top:25px; right:16px;
 }
-header .m_nav_open ul {background: yellow;
+header .m_nav_open ul {/* background: yellow; */
     text-align: center;
 }
 header .m_nav_open ul li {
@@ -60,7 +60,7 @@ main {}
 가장 바깥쪽 swiper 영역틀 기준으로 가변크기를 넣어주면 자동으로 반응형에 맞춰지는 슬라이드가 완성된다. */
 main #pawin_slide {
     max-width:1160px; height:650px;
-    background:yellow;
+    /* background:yellow; */
 }
 main #pawin_slide .swiper-wrapper {}
 main #pawin_slide .swiper-wrapper .swiper-slide {}
@@ -99,7 +99,7 @@ main #pawin_slide .swiper-button-next::after {
 /* 1160*300 slide*3 swiper */
 main #sub_slide {
     width:1160px; height:300px;
-    background:lightblue;
+    /* background:lightblue; */
 }
 main #sub_slide .swiper-wrapper {}
 main #sub_slide .swiper-wrapper .swiper-slide {}
@@ -140,7 +140,7 @@ main .dog_info {
     font-size:2rem; text-align:center;
 }
 main #dog_info_slide {
-    background: aqua;
+    /* background: aqua; */
     max-width:1160px; margin:0 auto;
     width:calc(100% - 30px);
 }

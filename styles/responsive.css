@@ -11,7 +11,7 @@
     header nav ul {display:none;}
     header nav .m_nav {
         width:40px; height:40px;
-        background:lime;
+        /* background:lime; */
         display: flex; flex-flow: column nowrap;
         justify-content: space-between;
     }
@@ -25,7 +25,7 @@
     header nav .m_nav span:nth-child(3) {}
     /* m-nav-open */
     header .m_nav_open {
-    background: lime;
+    /* background: lime; */
     display: block; /*none -> block 다시 변경*/
     }
     /* pawin-slide */
